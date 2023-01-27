@@ -41,7 +41,7 @@ jobs:
         run: |
           TEMP=$(mktemp)
           echo "${{ secrets.DEPLOY_KEY }}" > $TEMP
-          ssh -o StrictHostKeyChecking=no -i $TEMP -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} /mnt/data/{{cookiecutter.project_slug}}/update
+          ssh -o StrictHostKeyChecking=no -i $TEMP -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} /mnt/data/hass_grdf_api/update
       - name: Check
         uses: nick-fields/retry@v2
         with:
