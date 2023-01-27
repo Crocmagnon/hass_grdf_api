@@ -1,0 +1,13 @@
+version: "2.4"
+
+services:
+  django:
+    build: .
+    image: crocmagnon/hass_grdf_api
+    env_file:
+      - envs/docker-local-envs.env
+    volumes:
+      - src:/app/src
+      - db:/app/db
+    ports:
+      - "8000:8000"
