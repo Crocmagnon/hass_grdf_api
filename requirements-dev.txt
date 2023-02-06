@@ -325,9 +325,9 @@ h11==0.14.0 \
     --hash=sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d \
     --hash=sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761
     # via wsproto
-hypothesis==6.65.2 \
-    --hash=sha256:26c52473a526b31672d97f88be0b7ac134f0ea180737c71ada2a4d82ad175e92 \
-    --hash=sha256:821279f05fad38575271be3fdfff1e22232613f3d21b3fc991d735057f9b5b47
+hypothesis==6.67.1 \
+    --hash=sha256:7abb4361d796ae6432d1c0b22a514210a2a19cb0d85efca8463e619a80f3132c \
+    --hash=sha256:947839d8b5fd24d9b4d1e41ee10f7285d023f49f3b318519bf110fa9e5f3154e
     # via -r requirements-dev.in
 identify==2.5.15 \
     --hash=sha256:1f4b36c5f50f3f950864b2a047308743f064eaa6f6645da5e5c780d1c7125487 \
@@ -495,12 +495,6 @@ selenium==4.8.0 \
     --hash=sha256:20f28ee4ea9b273b4112a7df5276ebb3052f79ff6eff42a564db6143e5926683 \
     --hash=sha256:fee36724d6cf0b18c73781bb8ec7be4a35ab1e2564e64e64e64da75e50e052af
     # via pytest-selenium
-setuptools==66.1.1 \
-    --hash=sha256:6f590d76b713d5de4e49fe4fbca24474469f53c83632d5d0fd056f7ff7e8112b \
-    --hash=sha256:ac4008d396bc9cd983ea483cb7139c0240a07bbc74ffb6232fceffedc6cf03a8
-    # via
-    #   -c constraints.txt
-    #   nodeenv
 six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
