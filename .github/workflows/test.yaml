@@ -1,6 +1,7 @@
 name: Test
 
 on:
+  workflow_dispatch:
   workflow_call:
   pull_request:
     branches: [ "master" ]
@@ -18,12 +19,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11.1'
+          python-version: '3.11'
           cache: pip
       - name: Install dependencies
         run: |
           pip install pip-tools
           pip-sync requirements.txt requirements-dev.txt
+      - name: Ruff
+        run: ruff --format=github .
       - name: Test
         run: pytest --cov=. --cov-branch --cov-report term-missing:skip-covered
         working-directory: ./src/
