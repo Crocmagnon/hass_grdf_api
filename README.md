@@ -17,10 +17,8 @@ L'intégration Home Assistant récupère les données du passe plat et les expos
 ## Quick start
 Clone, then
 ```shell
-pyenv virtualenv 3.11.1 hass_grdf_api
-pyenv local hass_grdf_api
-pip install pip-tools
-pip-sync requirements.txt requirements-dev.txt
+pip install -U pip-tools invoke
+inv sync-dependencies
 pre-commit install --install-hooks
 inv test
 ./src/manage.py migrate
